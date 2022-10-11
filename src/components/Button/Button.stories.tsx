@@ -26,6 +26,12 @@ export default {
       },
       options: ['primary', 'secondary', 'outlined', 'text'],
     },
+    size: {
+      control: {
+        type: 'select',
+      },
+      options: ['sm', 'md', 'lg'],
+    },
     iconPosition: {
       control: {
         type: 'select',
@@ -52,7 +58,7 @@ const Template: ComponentStory<(Props: ButtonProps & {showIcon: boolean}) => JSX
   return (
     <>
       {/* <Text variant={TextVariantsEnum.Body_L}>Counter: {counter}</Text> */}
-      {counter}
+      {/* {counter} */}
       <Button
         onClick={handleClick}
         loading={isLoading}
@@ -69,6 +75,7 @@ button.args = {
   variant: ButtonVariantEnum.primary,
   disabled: false,
   width: 'content',
+  size: 'md',
   showIcon: true,
   iconPosition: 'left',
 };

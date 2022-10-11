@@ -1,6 +1,6 @@
 export enum IconsEnum {
   // common
-  loader = '/icons/common/loader.svg',
+  loader = './icons/common/loader.svg',
   search = '/icons/common/search.svg',
 }
 
