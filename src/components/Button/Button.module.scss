@@ -95,6 +95,8 @@
       &.loading {
         .loader {
           background: var(--white);
+          color: var(--primary);
+          stroke: var(--primary);
         }
       }
     }

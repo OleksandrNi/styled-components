@@ -1,15 +1,7 @@
+@use "./colors.scss";
+
 .App {
   text-align: center;
   color: white;
   background-color: teal;
-}
-
-:root {
-  --primary: #10A8C9;
-  --light-primary: #11B7DB;
-  --ultra-light-primary: #E8F7FA;
-  --dark-primary: #0E97B5;
-  --gray: #515B6C;
-  --light-gray: #D7DBE2;
-  --white: #E5E5E5; 
 }
