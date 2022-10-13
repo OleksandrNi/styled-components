@@ -8,8 +8,6 @@ import { ButtonProps, ButtonVariantEnum } from './Button.types';
 import { IconsEnum } from '@components/SvgIcon';
 // import { Text, TextVariantsEnum } from '@components/Text';
 
-
-
 export default {
   title: 'Components/Button',
   component: Button,

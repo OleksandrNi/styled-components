@@ -1,0 +1,115 @@
+@use "../../styles/App.scss";
+
+.text {
+  display: flex;
+  align-items: center;
+
+  &_heading {
+
+    &_1 {
+      font-size: 34px;
+      height: 38px;
+      font-weight: 700;
+    }
+
+    &_2 {
+      font-size: 28px;
+      height: 36px;
+      font-weight: 700;
+    }
+
+    &_3 {
+      font-size: 24px;
+      height: 30px;
+      font-weight: 700;
+    }
+
+    &_4 {
+      font-size: 20px;
+      height: 24px;
+      font-weight: 700;
+    }
+
+    &_5 {
+      font-size: 18px;
+      height: 24px;
+      font-weight: 700;
+    }
+  }
+
+  &_subtitle {
+    &_m {
+      font-size: 16px;
+      height: 20px;
+      font-weight: 700;
+    }
+
+    &_s {
+      font-size: 14px;
+      height: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &_body {
+    &_l {
+      font-size: 16px;
+      height: 20px;
+      font-weight: 500;
+    }
+
+    &_m {
+      font-size: 14px;
+      height: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &_caption {
+    font-size: 12px;
+    height: 26px;
+    font-weight: 300;
+  }
+
+  &_colors {
+    &_black {
+      color: #10203B;
+    }
+
+    &_dark_grey {
+      color: #515B6C;
+    }
+
+    &_grey {
+      color: #9CA4B3;
+    }
+
+    &_light_grey {
+      color: #D7DBE2;
+    }
+
+    &_bg {
+      color: #F9F9F9;
+    }
+
+    &_profile_block {
+      color: #263650;
+    }
+
+    &_main {
+      color: #10A8C9;
+    }
+
+    &_red {
+      color: #D82045;
+    }
+
+    &_green {
+      color: #03D087;
+    }
+
+    &_orange {
+      color: #F2994A;
+    }
+  }
+}
