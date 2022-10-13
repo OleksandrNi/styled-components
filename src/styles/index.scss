@@ -1,6 +1,9 @@
 @use "./App.scss";
+@use "./normalize.scss";
+@use "./fonts/fonts.scss";
+
 
 body {
-  margin: 0;
-  font-family: "Roboto", "Oxygen", sans-serif;
+  // font-family: "Roboto", "Oxygen", sans-serif;
+  font-family: "Inter", sans-serif;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@components/Button";
-import { IconsEnum } from "@components/SvgIcon";
 
 function App() {
   return (
