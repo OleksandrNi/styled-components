@@ -1,0 +1,87 @@
+@use "../../styles/App.scss";
+
+.avatar {
+  display: flex;
+  align-items: center;
+
+  &_size {
+
+    &_s {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #F2994A;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &_M {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #F2994A;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &_L {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: #F2994A;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  &_colors {
+    &_black {
+      color: #10203B;
+    }
+
+    &_dark_grey {
+      color: #515B6C;
+    }
+
+    &_grey {
+      color: #9CA4B3;
+    }
+
+    &_light_grey {
+      color: #D7DBE2;
+    }
+
+    &_bg {
+      color: #F9F9F9;
+    }
+
+    &_profile_block {
+      color: #263650;
+    }
+
+    &_main {
+      color: #10A8C9;
+    }
+
+    &_red {
+      color: #D82045;
+    }
+
+    &_green {
+      color: #03D087;
+    }
+
+    &_orange {
+      color: #F2994A;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@components/Button";
 import { Text } from "@components/Text";
+import { Avatar } from "@components/Avatar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </div>
       <Text variant={'heading_1'} color={'main'} text ={'hello!'}/>
       <h2>hello!</h2>
+      <Avatar variant={'size_L'} text={'AH'}/>
     </div>
   );
 }

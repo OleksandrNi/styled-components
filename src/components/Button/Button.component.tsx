@@ -6,7 +6,6 @@ import { SvgIcon, IconsEnum } from '@components/SvgIcon';
 import styles from './Button.module.scss';
 import { ButtonProps } from './Button.types';
 
-
 export const ButtonComponent: React.FC<ButtonProps> = ({
   text,
   id,
