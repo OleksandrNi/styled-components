@@ -1,10 +1,10 @@
 export type TagsProps = {
   [keys: string]: string;
-}
+};
 
 export type ColorsProps = {
   [keys: string]: string;
-}
+};
 
 export enum TagsVariantEnum {
   heading_1 = "h1",
@@ -17,7 +17,7 @@ export enum TagsVariantEnum {
   body_l = "p",
   body_m = "p",
   caption = "p",
-}
+};
 
 export enum ColorsVariantEnum {
   black = "10203B",
@@ -30,7 +30,7 @@ export enum ColorsVariantEnum {
   red = "D82045",
   green = "03D087",
   orange = "F2994A",
-}
+};
 
 export type TextProps = {
   variant: string;

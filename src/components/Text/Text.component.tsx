@@ -1,8 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import styles from './Text.module.scss';
 import { TextProps } from './Text.types';
+
+import styles from './Text.module.scss';
 import { tags } from './Text.constants';
 
 export const TextComponent: React.FC<TextProps> = ({

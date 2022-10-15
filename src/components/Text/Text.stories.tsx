@@ -1,8 +1,7 @@
-import React from 'react';
-
 import { ComponentStory } from '@storybook/react';
 
 import { Text } from '.';
+
 import { TextProps, TagsVariantEnum, ColorsVariantEnum } from './Text.types';
 
 export default {

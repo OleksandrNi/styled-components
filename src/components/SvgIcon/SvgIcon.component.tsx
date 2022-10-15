@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { ReactSVG } from 'react-svg';
 
-import { IconsEnum, SvgIconProps } from './SvgIcon.types';
+import { SvgIconProps } from './SvgIcon.types';
 
 import styles from './SvgIcon.module.scss';
 
@@ -37,8 +37,6 @@ export const SvgIconComponent: React.FC<SvgIconProps> = ({
     ...style,
     ...stroke,
   };
-
-  console.log(IconsEnum.loader)
 
   return (
     <ReactSVG

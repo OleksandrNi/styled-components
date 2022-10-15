@@ -1,8 +1,7 @@
-import React from 'react';
-
 import { ComponentStory } from '@storybook/react';
 
 import { Avatar } from '.';
+
 import { AvatarProps, AvatarVariantEnum, ColorsVariantEnum } from './Avatar.types';
 
 export default {
@@ -37,7 +36,7 @@ const Template: ComponentStory<(Props: AvatarProps) => JSX.Element> = ({
 
 export const avatar = Template.bind({});
 avatar.args = {
-  text: 'some text',
+  text: 'AH',
   variant: AvatarVariantEnum.size_M,
   color: ColorsVariantEnum.main,
 };

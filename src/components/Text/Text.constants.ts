@@ -11,7 +11,7 @@ export const tags: TagsProps = {
   body_l: "p",
   body_m: "p",
   caption: "p",
-}
+};
 
 export const colors: ColorsProps = {
   black: "10203B",
@@ -24,4 +24,4 @@ export const colors: ColorsProps = {
   red: "D82045",
   green: "03D087",
   orange: "F2994A",
-}
+};
