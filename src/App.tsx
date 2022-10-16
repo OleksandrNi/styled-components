@@ -3,6 +3,7 @@ import { Button } from "@components/Button";
 import { Text } from "@components/Text";
 import { Avatar } from "@components/Avatar";
 import { Badge } from "@components/Badge";
+import { Input } from "@components/Input";
 
 function App() {
   return (
@@ -15,6 +16,13 @@ function App() {
       <Avatar variant={'size_L'} text={'AH'}/>
       <br />
       <Badge variant={'comp_position'}/>
+      <br />
+      <Input 
+        type={'password'}
+        label={'Enter password'} 
+        size={'L'} 
+        error={''}
+      />
     </div>
   );
 }

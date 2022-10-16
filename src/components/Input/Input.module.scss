@@ -1,0 +1,86 @@
+@use "../../styles/App.scss";
+
+.input_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9CA4B3;
+  border-radius: 4px;
+  max-width: 328px;
+
+  &:focus-within label {
+    transform: translate(0, -10px) scale(0.7);
+    padding: 3px;
+    color: #10A8C9;
+  }
+  
+  .filled {
+    transform: translate(0, -10px) scale(0.7);
+    padding: 3px;
+  }
+  
+  label {
+    position: absolute;
+    pointer-events: none;
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    color: #9CA4B3;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1;
+    left: 16px;
+  }
+  
+  input {
+    border-radius: 4px;
+    border: none;
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    box-shadow: none;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  }
+  
+  input:focus {
+    box-shadow: 0 0 0 1px #10A8C9;
+  }
+
+  &_error {
+    border: 1px solid #D82045;
+
+    input:focus {
+      box-shadow: 0 0 0 0.5px #D82045;
+    }
+
+    label {
+      color: #D82045;
+    }
+
+    &:focus-within input {
+      border: 1px solid #D82045;
+    }
+
+    &:focus-within label {
+      color: #D82045;
+    }
+  }
+
+  &_size_M {
+    input {
+      height: 40px;
+    }
+    label {
+      transform: translate(0, 10px) scale(1);
+    }
+  }
+
+  &_size_L {
+    input {
+      height: 56px;
+    }
+    label {
+      transform: translate(0, 20px) scale(1);
+    }
+  }
+}
