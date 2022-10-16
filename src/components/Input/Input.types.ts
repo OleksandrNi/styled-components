@@ -11,4 +11,5 @@ export type InputProps = {
   label: string,
   error: string,
   size: string,
+  placeholder: string,
 };

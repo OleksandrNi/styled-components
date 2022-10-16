@@ -18,6 +18,13 @@
     transform: translate(0, -10px) scale(0.7);
     padding: 3px;
   }
+
+  .icon {
+    position: absolute;
+    width: 24px;
+    right: 14px; 
+    // top: 16px;
+  }
   
   label {
     position: absolute;
@@ -73,6 +80,9 @@
     label {
       transform: translate(0, 10px) scale(1);
     }
+    .icon {
+      top: 10px;
+    }
   }
 
   &_size_L {
@@ -81,6 +91,9 @@
     }
     label {
       transform: translate(0, 20px) scale(1);
+    }
+    .icon {
+      top: 16px;
     }
   }
 }

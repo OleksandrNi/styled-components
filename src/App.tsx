@@ -19,9 +19,10 @@ function App() {
       <br />
       <Input 
         type={'password'}
-        label={'Enter password'} 
+        label={''} 
         size={'L'} 
         error={''}
+        placeholder={''}
       />
     </div>
   );
