@@ -5,6 +5,8 @@ import { Avatar } from "@components/Avatar";
 import { Badge } from "@components/Badge";
 import { Input } from "@components/Input";
 import { Checkbox } from "@components/Checkbox";
+import { RadioButton } from "@components/RadioButton";
+import { Toggle } from "@components/Toggle";
 
 function App() {
   return (
@@ -26,6 +28,12 @@ function App() {
         placeholder={""}
       />
       <Checkbox isShowLabel={true} label={"some label"} />
+      <br />
+      <RadioButton isShowLabel={true} label={"some label"} id={'one'}/>
+      <RadioButton isShowLabel={true} label={"some label"} id={'two'}/>
+      <br />
+      <Toggle isShowLabel={true} label={'toggle'} />
+      
     </div>
   );
 }
