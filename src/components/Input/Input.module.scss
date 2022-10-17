@@ -4,16 +4,16 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid #9CA4B3;
+  border: 1px solid #9ca4b3;
   border-radius: 4px;
   max-width: 328px;
 
   &:focus-within label {
     transform: translate(0, -10px) scale(0.7);
     padding: 3px;
-    color: #10A8C9;
+    color: #10a8c9;
   }
-  
+
   .filled {
     transform: translate(0, -10px) scale(0.7);
     padding: 3px;
@@ -22,22 +22,21 @@
   .icon {
     position: absolute;
     width: 24px;
-    right: 14px; 
-    // top: 16px;
+    right: 14px;
   }
-  
+
   label {
     position: absolute;
     pointer-events: none;
     transform-origin: top left;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    color: #9CA4B3;
-    background-color: #FFFFFF;
+    color: #9ca4b3;
+    background-color: #ffffff;
     font-size: 16px;
     line-height: 1;
     left: 16px;
   }
-  
+
   input {
     border-radius: 4px;
     border: none;
@@ -48,28 +47,28 @@
     box-shadow: none;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   }
-  
+
   input:focus {
-    box-shadow: 0 0 0 1px #10A8C9;
+    box-shadow: 0 0 0 1px #10a8c9;
   }
 
   &_error {
-    border: 1px solid #D82045;
+    border: 1px solid #d82045;
 
     input:focus {
-      box-shadow: 0 0 0 0.5px #D82045;
+      box-shadow: 0 0 0 0.5px #d82045;
     }
 
     label {
-      color: #D82045;
+      color: #d82045;
     }
 
     &:focus-within input {
-      border: 1px solid #D82045;
+      border: 1px solid #d82045;
     }
 
     &:focus-within label {
-      color: #D82045;
+      color: #d82045;
     }
   }
 

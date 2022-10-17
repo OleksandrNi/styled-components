@@ -1,10 +1,10 @@
-import { AvatarsProps, ColorsProps } from './Avatar.types';
+import { AvatarsProps, ColorsProps } from "./Avatar.types";
 
 export const avatars: AvatarsProps = {
   size_s: "size_s",
   size_M: "size_M",
   size_L: "size_L",
-}
+};
 
 export const colors: ColorsProps = {
   black: "10203B",
@@ -17,4 +17,4 @@ export const colors: ColorsProps = {
   red: "D82045",
   green: "03D087",
   orange: "F2994A",
-}
+};

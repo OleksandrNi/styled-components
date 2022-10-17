@@ -1,18 +1,18 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentStory } from "@storybook/react";
 
-import { Checkbox } from '.';
+import { Checkbox } from ".";
 
-import { CheckboxProps } from './Checkbox.types';
+import { CheckboxProps } from "./Checkbox.types";
 
 export default {
-  title: 'Components/Checkbox',
+  title: "Components/Checkbox",
   component: Checkbox,
   argTypes: {
     label: {
       control: {
-        type: 'text',
+        type: "text",
       },
-      options: [''],
+      options: [""],
     },
   },
 };
@@ -20,10 +20,9 @@ export default {
 const Template: ComponentStory<(Props: CheckboxProps) => JSX.Element> = ({
   ...args
 }) => {
-
   return (
     <>
-      <Checkbox {...args}/>
+      <Checkbox {...args} />
     </>
   );
 };
@@ -31,5 +30,5 @@ const Template: ComponentStory<(Props: CheckboxProps) => JSX.Element> = ({
 export const checkbox = Template.bind({});
 checkbox.args = {
   isShowLabel: true,
-  label: '',
+  label: "",
 };

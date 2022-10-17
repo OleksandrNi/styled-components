@@ -9,23 +9,23 @@ import { Checkbox } from "@components/Checkbox";
 function App() {
   return (
     <div>
-      <div className='App'>
-        <Button text={"click me!"}/>
+      <div className="App">
+        <Button text={"click me!"} />
       </div>
-      <Text variant={'heading_1'} color={'main'} text ={'hello!'}/>
+      <Text variant={"heading_1"} color={"main"} text={"hello!"} />
       <h2>hello!</h2>
-      <Avatar variant={'size_L'} text={'AH'}/>
+      <Avatar variant={"size_L"} text={"AH"} />
       <br />
-      <Badge variant={'comp_position'}/>
+      <Badge variant={"comp_position"} />
       <br />
-      <Input 
-        type={'password'}
-        label={''} 
-        size={'L'} 
-        error={''}
-        placeholder={''}
+      <Input
+        type={"password"}
+        label={""}
+        size={"L"}
+        error={""}
+        placeholder={""}
       />
-      <Checkbox isShowLabel={true} label={'some label'} />
+      <Checkbox isShowLabel={true} label={"some label"} />
     </div>
   );
 }

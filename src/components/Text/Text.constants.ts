@@ -1,4 +1,4 @@
-import { TagsProps, ColorsProps } from './Text.types';
+import { TagsProps, ColorsProps } from "./Text.types";
 
 export const tags: TagsProps = {
   heading_1: "h1",

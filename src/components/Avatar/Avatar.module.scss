@@ -5,7 +5,6 @@
   align-items: center;
 
   &_size {
-
     &_s {
       display: flex;
       align-items: center;
@@ -13,7 +12,7 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background-color: #F2994A;
+      background-color: #f2994a;
       font-size: 14px;
       font-weight: 700;
     }
@@ -25,7 +24,7 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: #F2994A;
+      background-color: #f2994a;
       font-size: 16px;
       font-weight: 700;
     }
@@ -37,7 +36,7 @@
       width: 54px;
       height: 54px;
       border-radius: 50%;
-      background-color: #F2994A;
+      background-color: #f2994a;
       font-size: 24px;
       font-weight: 700;
     }
@@ -45,23 +44,23 @@
 
   &_colors {
     &_black {
-      color: #10203B;
+      color: #10203b;
     }
 
     &_dark_grey {
-      color: #515B6C;
+      color: #515b6c;
     }
 
     &_grey {
-      color: #9CA4B3;
+      color: #9ca4b3;
     }
 
     &_light_grey {
-      color: #D7DBE2;
+      color: #d7dbe2;
     }
 
     &_bg {
-      color: #F9F9F9;
+      color: #f9f9f9;
     }
 
     &_profile_block {
@@ -69,19 +68,19 @@
     }
 
     &_main {
-      color: #10A8C9;
+      color: #10a8c9;
     }
 
     &_red {
-      color: #D82045;
+      color: #d82045;
     }
 
     &_green {
-      color: #03D087;
+      color: #03d087;
     }
 
     &_orange {
-      color: #F2994A;
+      color: #f2994a;
     }
   }
 }

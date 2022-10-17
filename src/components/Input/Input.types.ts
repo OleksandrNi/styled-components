@@ -4,12 +4,12 @@ export enum InputVariantEnum {
   email = "email",
   date = "date",
   currency = "currency",
-};
+}
 
 export type InputProps = {
-  type: string,
-  label: string,
-  error: string,
-  size: string,
-  placeholder: string,
+  type: string;
+  label: string;
+  error: string;
+  size: string;
+  placeholder: string;
 };

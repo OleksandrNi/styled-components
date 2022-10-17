@@ -1,2 +1,2 @@
-export { CheckboxComponent as Checkbox } from './Checkbox.component';
-export * from './Checkbox.types';
+export { CheckboxComponent as Checkbox } from "./Checkbox.component";
+export * from "./Checkbox.types";

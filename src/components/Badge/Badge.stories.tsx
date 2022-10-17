@@ -1,18 +1,31 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentStory } from "@storybook/react";
 
-import { Badge } from '.';
+import { Badge } from ".";
 
-import { BadgeProps } from './Badge.types';
+import { BadgeProps } from "./Badge.types";
 
 export default {
-  title: 'Components/Badge',
+  title: "Components/Badge",
   component: Badge,
   argTypes: {
     variant: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['popular', 'new', 'not_available', 'comp_position', 'active', 'not_active', 'deactivated', 'in_process', 'for_approval', 'completed', 'not_published', 'recomended'],
+      options: [
+        "popular",
+        "new",
+        "not_available",
+        "comp_position",
+        "active",
+        "not_active",
+        "deactivated",
+        "in_process",
+        "for_approval",
+        "completed",
+        "not_published",
+        "recomended",
+      ],
     },
   },
 };
@@ -20,15 +33,14 @@ export default {
 const Template: ComponentStory<(Props: BadgeProps) => JSX.Element> = ({
   ...args
 }) => {
-
   return (
     <>
-      <Badge {...args}/>
+      <Badge {...args} />
     </>
   );
 };
 
 export const badge = Template.bind({});
 badge.args = {
-  variant: 'popular',
+  variant: "popular",
 };

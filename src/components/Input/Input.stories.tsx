@@ -1,42 +1,42 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentStory } from "@storybook/react";
 
-import { Input } from '.';
+import { Input } from ".";
 
-import { InputProps } from './Input.types';
+import { InputProps } from "./Input.types";
 
 export default {
-  title: 'Components/Input',
+  title: "Components/Input",
   component: Input,
   argTypes: {
     type: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['text', 'password', 'email', 'date', 'currency'],
+      options: ["text", "password", "email", "date", "currency"],
     },
     size: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['M', 'L'],
+      options: ["M", "L"],
     },
     error: {
       control: {
-        type: 'text',
+        type: "text",
       },
-      options: [''],
+      options: [""],
     },
     label: {
       control: {
-        type: 'text',
+        type: "text",
       },
-      options: [''],
+      options: [""],
     },
     placeholder: {
       control: {
-        type: 'text',
+        type: "text",
       },
-      options: [''],
+      options: [""],
     },
   },
 };
@@ -44,19 +44,18 @@ export default {
 const Template: ComponentStory<(Props: InputProps) => JSX.Element> = ({
   ...args
 }) => {
-
   return (
     <>
-      <Input {...args}/>
+      <Input {...args} />
     </>
   );
 };
 
 export const input = Template.bind({});
 input.args = {
-  type: 'text',
-  size: 'L',
-  label: '',
-  error: '',
-  placeholder: '',
+  type: "text",
+  size: "L",
+  label: "",
+  error: "",
+  placeholder: "",
 };

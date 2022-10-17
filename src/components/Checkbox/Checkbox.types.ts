@@ -1,4 +1,4 @@
 export type CheckboxProps = {
-  isShowLabel: boolean,
-  label: string,
+  isShowLabel: boolean;
+  label: string;
 };

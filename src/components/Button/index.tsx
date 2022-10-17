@@ -1,2 +1,2 @@
-export { ButtonComponent as Button } from './Button.component';
-export * from './Button.types';
+export { ButtonComponent as Button } from "./Button.component";
+export * from "./Button.types";

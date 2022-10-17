@@ -1,48 +1,46 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { ComponentStory } from '@storybook/react';
+import { ComponentStory } from "@storybook/react";
 
-import { Button } from '.';
-import { ButtonProps, ButtonVariantEnum } from './Button.types';
+import { Button } from ".";
+import { ButtonProps, ButtonVariantEnum } from "./Button.types";
 
-import { IconsEnum } from '@components/SvgIcon';
-// import { Text, TextVariantsEnum } from '@components/Text';
+import { IconsEnum } from "@components/SvgIcon";
 
 export default {
-  title: 'Components/Button',
+  title: "Components/Button",
   component: Button,
   argTypes: {
     width: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['content', 'full'],
+      options: ["content", "full"],
     },
     variant: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['primary', 'secondary', 'outlined', 'text'],
+      options: ["primary", "secondary", "outlined", "text"],
     },
     size: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['sm', 'md', 'lg'],
+      options: ["sm", "md", "lg"],
     },
     iconPosition: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['left', 'right'],
+      options: ["left", "right"],
     },
   },
 };
 
-const Template: ComponentStory<(Props: ButtonProps & {showIcon: boolean}) => JSX.Element> = ({
-  showIcon,
-  ...args
-}) => {
+const Template: ComponentStory<
+  (Props: ButtonProps & { showIcon: boolean }) => JSX.Element
+> = ({ showIcon, ...args }) => {
   const [counter, setCounter] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -55,8 +53,6 @@ const Template: ComponentStory<(Props: ButtonProps & {showIcon: boolean}) => JSX
   };
   return (
     <>
-      {/* <Text variant={TextVariantsEnum.Body_L}>Counter: {counter}</Text> */}
-      {/* {counter} */}
       <Button
         onClick={handleClick}
         loading={isLoading}
@@ -69,11 +65,11 @@ const Template: ComponentStory<(Props: ButtonProps & {showIcon: boolean}) => JSX
 
 export const button = Template.bind({});
 button.args = {
-  text: 'Click me',
+  text: "Click me",
   variant: ButtonVariantEnum.primary,
   disabled: false,
-  width: 'content',
-  size: 'md',
+  width: "content",
+  size: "md",
   showIcon: true,
-  iconPosition: 'left',
+  iconPosition: "left",
 };

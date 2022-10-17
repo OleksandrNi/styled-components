@@ -1,15 +1,15 @@
-import React from 'react';
-import classNames from 'classnames';
-import { ReactSVG } from 'react-svg';
+import React from "react";
+import classNames from "classnames";
+import { ReactSVG } from "react-svg";
 
-import { SvgIconProps } from './SvgIcon.types';
+import { SvgIconProps } from "./SvgIcon.types";
 
-import styles from './SvgIcon.module.scss';
+import styles from "./SvgIcon.module.scss";
 
 export const SvgIconComponent: React.FC<SvgIconProps> = ({
   src,
   size = 24,
-  color = 'inherit',
+  color = "inherit",
   rotate,
   className,
   style,
@@ -48,4 +48,4 @@ export const SvgIconComponent: React.FC<SvgIconProps> = ({
   );
 };
 
-SvgIconComponent.displayName = 'SvgIcon';
+SvgIconComponent.displayName = "SvgIcon";

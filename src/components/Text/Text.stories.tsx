@@ -1,25 +1,46 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentStory } from "@storybook/react";
 
-import { Text } from '.';
+import { Text } from ".";
 
-import { TextProps, TagsVariantEnum, ColorsVariantEnum } from './Text.types';
+import { TextProps, TagsVariantEnum, ColorsVariantEnum } from "./Text.types";
 
 export default {
-  title: 'Components/Text',
+  title: "Components/Text",
   component: Text,
   argTypes: {
     variant: {
       control: {
-        type: 'select',
+        type: "select",
       },
       options: [
-        'heading_1', 'heading_2', 'heading_3', 'heading_4', 'heading_5', 'subtitle_m', 'subtitle_s', 'body_l', 'body_m', 'caption'],
+        "heading_1",
+        "heading_2",
+        "heading_3",
+        "heading_4",
+        "heading_5",
+        "subtitle_m",
+        "subtitle_s",
+        "body_l",
+        "body_m",
+        "caption",
+      ],
     },
     color: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['black', 'dark_grey', 'grey', 'light_grey', 'bg', 'profile_block', 'main', 'red', 'green', 'orange'],
+      options: [
+        "black",
+        "dark_grey",
+        "grey",
+        "light_grey",
+        "bg",
+        "profile_block",
+        "main",
+        "red",
+        "green",
+        "orange",
+      ],
     },
   },
 };
@@ -27,17 +48,16 @@ export default {
 const Template: ComponentStory<(Props: TextProps) => JSX.Element> = ({
   ...args
 }) => {
-
   return (
     <>
-      <Text {...args}/>
+      <Text {...args} />
     </>
   );
 };
 
 export const text = Template.bind({});
 text.args = {
-  text: 'some text',
+  text: "some text",
   variant: TagsVariantEnum.heading_1,
   color: ColorsVariantEnum.main,
 };

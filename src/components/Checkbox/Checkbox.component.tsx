@@ -1,18 +1,24 @@
-import { CheckboxProps } from './Checkbox.types';
+import { CheckboxProps } from "./Checkbox.types";
 
-import styles from './Checkbox.module.scss';
+import styles from "./Checkbox.module.scss";
 
 export const CheckboxComponent: React.FC<CheckboxProps> = ({
-  isShowLabel, label
+  isShowLabel,
+  label,
 }) => {
-
   return (
-    <div style={{display: 'flex'}}>
-      <input type="checkbox" className={styles.custom_checkbox} id="happy" name="happy" value="yes"/>
-      <label htmlFor="happy"></label>
+    <div style={{ display: "flex" }}>
+      <input
+        type="checkbox"
+        className={styles.custom_checkbox}
+        id="checkbox"
+        name="checkbox"
+        value="yes"
+      />
+      <label htmlFor="checkbox"></label>
       {isShowLabel && <div>{label}</div>}
     </div>
   );
 };
 
-CheckboxComponent.displayName = 'Checkbox';
+CheckboxComponent.displayName = "Checkbox";

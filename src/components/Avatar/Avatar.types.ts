@@ -10,7 +10,7 @@ export enum AvatarVariantEnum {
   size_s = "size_s",
   size_M = "size_M",
   size_L = "size_L",
-};
+}
 
 export enum ColorsVariantEnum {
   black = "10203B",
@@ -23,7 +23,7 @@ export enum ColorsVariantEnum {
   red = "D82045",
   green = "03D087",
   orange = "F2994A",
-};
+}
 
 export type AvatarProps = {
   variant: string;
