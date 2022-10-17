@@ -4,6 +4,7 @@ import { Text } from "@components/Text";
 import { Avatar } from "@components/Avatar";
 import { Badge } from "@components/Badge";
 import { Input } from "@components/Input";
+import { Checkbox } from "@components/Checkbox";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         error={''}
         placeholder={''}
       />
+      <Checkbox isShowLabel={true} label={'some label'} />
     </div>
   );
 }
