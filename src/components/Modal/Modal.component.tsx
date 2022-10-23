@@ -5,6 +5,7 @@ import styles from "./Modal.module.scss";
 import { ModalProps } from "./Modal.types";
 
 export const ModalComponent: React.FC<ModalProps> = ({
+  isOpen,
   setIsOpen,
   children,
 }) => {

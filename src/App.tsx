@@ -38,7 +38,7 @@ function App() {
       <Toggle isShowLabel={true} label={'toggle'} />
       <br />
       <Button onClick={() => setIsOpen(true)} text={"open modal"} />
-      {isOpen && <Modal setIsOpen={setIsOpen}>
+      {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <Text variant={"heading_1"} color={"main"} text={"Modal content"} />
       </Modal>}
     </div>
