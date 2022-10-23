@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@components/Button";
 import { Text } from "@components/Text";
 import { Avatar } from "@components/Avatar";
@@ -7,8 +7,10 @@ import { Input } from "@components/Input";
 import { Checkbox } from "@components/Checkbox";
 import { RadioButton } from "@components/RadioButton";
 import { Toggle } from "@components/Toggle";
+import { Modal } from "@components/Modal";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
       <div className="App">
@@ -34,7 +36,11 @@ function App() {
       <RadioButton isShowLabel={true} label={"some label"} id={'two'}/>
       <br />
       <Toggle isShowLabel={true} label={'toggle'} />
-      
+      <br />
+      <Button onClick={() => setIsOpen(true)} text={"open modal"} />
+      {isOpen && <Modal setIsOpen={setIsOpen}>
+        <Text variant={"heading_1"} color={"main"} text={"Modal content"} />
+      </Modal>}
     </div>
   );
 }
