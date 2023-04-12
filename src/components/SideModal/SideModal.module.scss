@@ -1,0 +1,67 @@
+.side_modal {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(100, 92, 92);
+  z-index: 5;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  
+  &_left {
+    animation-name: modal-in-left;
+  }
+  
+  &_right {
+    animation-name: modal-in-right;
+  }
+}
+
+.hide_modal_left {
+  animation-name: modal-out-left;
+  animation-duration: 1s;
+}
+
+.hide_modal_right {
+  animation-name: modal-out-right;
+  animation-duration: 1s;
+}
+
+@keyframes modal-in-left {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes modal-in-right {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes modal-out-left {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -300px;
+  }
+}
+
+@keyframes modal-out-right {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -300px;
+  }
+}

@@ -8,6 +8,7 @@ import { Checkbox } from "@components/Checkbox";
 import { RadioButton } from "@components/RadioButton";
 import { Toggle } from "@components/Toggle";
 import { Modal } from "@components/Modal";
+import { SideModal } from "@components/SideModal";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,6 +42,9 @@ function App() {
       {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <Text variant={"heading_1"} color={"main"} text={"Modal content"} />
       </Modal>}
+      <SideModal variant={"right"}>
+        <Text variant={"heading_1"} color={"main"} text={"SideModal content"} />
+      </SideModal>
     </div>
   );
 }
